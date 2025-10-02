@@ -9,7 +9,7 @@
             padding: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4; /* Light background */
+            background-color: #f4f4f4;
             color: #333;
         }
 
@@ -29,22 +29,24 @@
 
         .content {
             max-width: 800px;
-            margin: 30px auto;
-            padding: 0 20px; /* small side padding */
+            margin: 30px auto; /* center container horizontally */
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column; /* stack items vertically */
+            align-items: flex-start; /* align all text to left */
         }
 
         .content img {
-            display: block;
-            margin: 20px auto;
+            margin: 0 0 20px 0; /* image top-aligned with text, left margin 0 */
             width: 200px;
             border-radius: 10px;
         }
 
         h2 {
-            text-align: left;
+            color: navy;
             margin-top: 40px;
             margin-bottom: 5px;
-            color: navy;
+            align-self: flex-start; /* ensure h2 stays left-aligned */
         }
 
         h2::after {
@@ -72,10 +74,8 @@
     </header>
 
     <div class="content">
-        <!-- Image and Welcome -->
+        <!-- Image at the top -->
         <img src="Headshot.jpg" alt="Gaby Gilles">
-        <h2>Welcome</h2>
-        <p>Welcome to my resume page! Here you can find my career objectives, education, technical skills, professional experience, and projects.</p>
 
         <!-- Career Objective -->
         <h2>Career Objective</h2>
