@@ -29,15 +29,15 @@
 
         .content {
             max-width: 800px;
-            margin: 30px auto; /* center container horizontally */
+            margin: 30px auto;
             padding: 0 20px;
             display: flex;
-            flex-direction: column; /* stack items vertically */
-            align-items: flex-start; /* align all text to left */
+            flex-direction: column;
+            align-items: flex-start;
         }
 
         .content img {
-            margin: 0 0 20px 0; /* image top-aligned with text, left margin 0 */
+            margin: 0 0 20px 0;
             width: 200px;
             border-radius: 10px;
         }
@@ -45,82 +45,8 @@
         h2 {
             color: navy;
             margin-top: 40px;
-            margin-bottom: 5px;
-            align-self: flex-start; /* ensure h2 stays left-aligned */
-        }
-
-        h2::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 2px;
-            background-color: navy;
-            margin-top: 5px;
             margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid navy; /* full-width line */
+            width: 100%;
         }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        p, li {
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Gabrielle Gilles Resume</h1>
-    </header>
-
-    <div class="content">
-        <!-- Image at the top -->
-        <img src="Headshot.jpg" alt="Gaby Gilles">
-
-        <!-- Career Objective -->
-        <h2>Career Objective</h2>
-        <p>To obtain a challenging position in the technology sector where I can utilize my skills in software development and contribute to innovative projects.</p>
-
-        <!-- Education -->
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor of Science in Computer Science, University Name, 2024</li>
-            <li>High School Diploma, High School Name, 2020</li>
-        </ul>
-
-        <!-- Technical Skills -->
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Programming Languages: Java, Python, JavaScript</li>
-            <li>Web Development: HTML, CSS, React</li>
-            <li>Database Management: SQL, MongoDB</li>
-            <li>Tools: Git, VS Code, Jira</li>
-        </ul>
-
-        <!-- Professional Experience -->
-        <h2>Professional Experience</h2>
-        <ul>
-            <li>Software Intern, Company Name, Summer 2023
-                <ul>
-                    <li>Developed web applications using JavaScript and React</li>
-                    <li>Collaborated with team to improve database performance</li>
-                </ul>
-            </li>
-            <li>Research Assistant, University Name, 2022-2023
-                <ul>
-                    <li>Analyzed data and wrote reports on cloud migration strategies</li>
-                    <li>Presented findings at academic conference</li>
-                </ul>
-            </li>
-        </ul>
-
-        <!-- Projects -->
-        <h2>Projects</h2>
-        <ul>
-            <li>Personal Portfolio Website – Built a responsive portfolio website using HTML, CSS, and JavaScript</li>
-            <li>Student Directory Skip List – Implemented a skip list in Java for efficient search and insertion</li>
-            <li>Data Visualization Dashboard – Created interactive charts using Python and Plotly</li>
-        </ul>
-    </div>
-</body>
-</html>
